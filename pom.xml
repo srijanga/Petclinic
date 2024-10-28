@@ -80,8 +80,25 @@
         <docker.jib-maven-plugin.version>2.6.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
-    </properties>
+         <jacoco.version>0.8.6</jacocoversion>
+	<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+	<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+	<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+	<sonar.language>java</sonar.language>    
 
+    </properties>
+    <distributionManagement>
+  <repository>
+    <id>maven-releases</id>
+	<!-- CHANGE HERE by your team nexus server -->
+    <url>http://public IP:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>maven-snapshots</id>
+	<!-- CHANGE HERE by your team nexus server -->
+	<url>http://public IP:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
+ </distributionManagement>  
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -551,6 +568,13 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+
+        <repository>
+             <id>maven-releases</id>
+             <name>maven-releases</name>
+             <url>http://Public IP:8081/repository/maven-releases/</url>
+        </repository>  
+             
     </repositories>
 
 </project>
