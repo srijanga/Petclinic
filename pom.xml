@@ -88,16 +88,16 @@
 		
     </properties>
     <distributionManagement>
-  	<repository>
-    	  <id>maven-releases</id>
-	  <!-- CHANGE HERE by your team nexus server -->
-    	  <url>http://54.234.199.233:8081/repository/maven-releases/</url>
-  	</repository>
-  	<snapshotRepository>
-    	  <id>maven-snapshots</id>
-	  <!-- CHANGE HERE by your team nexus server -->
-	  <url>http://54.234.199.233:8081/repository/maven-snapshots/</url>
-  	</snapshotRepository>
+  <repository>
+    <id>maven-releases</id>
+	<!-- CHANGE HERE by your team nexus server -->
+    <url>http://54.234.199.233:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>maven-snapshots</id>
+	<!-- CHANGE HERE by your team nexus server -->
+	<url>http://54.234.199.233:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
  </distributionManagement>
 
     <dependencyManagement>
@@ -575,6 +575,7 @@
           <name>maven-releases</name>
           <url>http://54.234.199.233:8081/repository/maven-releases/</url>
         </repository>
+	    
     </repositories>
 
 </project>
