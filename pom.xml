@@ -91,12 +91,12 @@
   <repository>
     <id>maven-releases</id>
 	<!-- CHANGE HERE by your team nexus server -->
-    <url>http://public IP:8081/repository/maven-releases/</url>
+    <url>http://54.234.199.233:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
     <id>maven-snapshots</id>
 	<!-- CHANGE HERE by your team nexus server -->
-	<url>http://public IP:8081/repository/maven-snapshots/</url>
+	<url>http://54.234.199.233:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
  </distributionManagement>  
     <dependencyManagement>
@@ -572,7 +572,7 @@
         <repository>
              <id>maven-releases</id>
              <name>maven-releases</name>
-             <url>http://Public IP:8081/repository/maven-releases/</url>
+             <url>http://54.234.199.233:8081/repository/maven-releases/</url>
         </repository>  
              
     </repositories>
