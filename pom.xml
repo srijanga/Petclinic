@@ -574,11 +574,11 @@
              <name>maven-releases</name>
              <url>http://54.234.199.233:8081/repository/maven-releases/</url>
         </repository>
-	<repository>
+<!-- 	<repository>
              <id>maven-snapshots</id>
              <name>maven-snapshots</name>
              <url>http://54.234.199.233:8081/repository/maven-snapshots/</url>
-        </repository>  
+        </repository>   -->
              
     </repositories>
 
