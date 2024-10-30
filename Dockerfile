@@ -1,4 +1,5 @@
-FROM openjdk:8
+FROM openjdk:8-jdk-alpine
+WORKDIR /app
 EXPOSE 8082
-ADD target/petclinic.war petclinic.war
-ENTRYPOINT ["java","-jar","/petclinic.war"]
+COPY petclinic.war /app/petclinic.war
+CMD ["java","-jar","/app/petclinic.war", "--server.port=8082"]
